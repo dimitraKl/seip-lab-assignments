@@ -1,0 +1,13 @@
+# Maven
+target/
+
+# Java
+*.class
+
+# Eclipse
+.metadata
+bin/
+local.properties
+.settings/
+.loadpath
+.recommenders
