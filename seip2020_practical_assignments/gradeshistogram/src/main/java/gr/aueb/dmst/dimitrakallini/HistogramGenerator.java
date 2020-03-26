@@ -8,21 +8,25 @@ import java.util.ArrayList;
 
 public class HistogramGenerator {
 
-	public ArrayList<Integer> readFromFile(String filename) {
+	public int[] readFromFile(String filename) {
 		
 		File fileWithGrades = new File(filename);
-		ArrayList<Integer> grades = new ArrayList<Integer>();
+		ArrayList<Integer> tempGrades = new ArrayList<Integer>();
 		
 		try{
 			BufferedReader br = new BufferedReader(new FileReader(fileWithGrades));
 			while (br.readLine() != null) {
 				int grade = Integer.parseInt(br.readLine());
-				grades.add(grade);
+				tempGrades.add(grade);
 			}
 			br.close();
 		} catch (IOException e) {
 			System.err.println("Something occured while reading from file.");
 		}
+		
+		int[] grades = new int[tempGrades.size()];
+		for (int i =0; i < tempGrades.size(); i++) 
+			grades[i] = tempGrades.get(i);
 		
 		return grades;
 	}
@@ -31,7 +35,7 @@ public class HistogramGenerator {
 		String filename = args[0];
 		HistogramGenerator hm = new HistogramGenerator();
 		
-		ArrayList<Integer> grades = hm.readFromFile(filename);
+		int[] grades = hm.readFromFile(filename);
 
 	}
 
