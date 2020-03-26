@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.lang.NumberFormatException;
 import java.util.ArrayList;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
@@ -28,7 +29,9 @@ public class HistogramGenerator {
 			br.close();
 		} catch (IOException e) {
 			System.err.println("Something occured while reading from file.");
-		}
+		} catch (NumberFormatException e) { 
+	        System.err.println(e); 
+	    }
 		
 		int[] grades = new int[tempGrades.size()];
 		for (int i =0; i < tempGrades.size(); i++) 
