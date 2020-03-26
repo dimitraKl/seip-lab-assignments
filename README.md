@@ -22,11 +22,12 @@ In order to build the project you should run `mvn install`.
 ## Usage
 
 Run the jar file and give a file with grades as a command-line argument.
+
 For example:
-'''
+```
 java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt
-'''
+```
 
 ## Licence
 
-Released under the [MIT Licence](https://choosealicense.com/licenses/mit/)
+Released under the [MIT Licence](https://choosealicense.com/licenses/mit/).
