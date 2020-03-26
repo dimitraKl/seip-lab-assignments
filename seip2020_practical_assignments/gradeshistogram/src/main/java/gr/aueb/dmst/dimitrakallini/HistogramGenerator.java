@@ -22,8 +22,9 @@ public class HistogramGenerator {
 		
 		try{
 			BufferedReader br = new BufferedReader(new FileReader(fileWithGrades));
-			while (br.readLine() != null) {
-				int grade = Integer.parseInt(br.readLine());
+			String line;
+			while ((line = br.readLine()) != null) {
+				int grade = Integer.parseInt(line);
 				tempGrades.add(grade);
 			}
 			br.close();
@@ -34,10 +35,19 @@ public class HistogramGenerator {
 	    }
 		
 		int[] grades = new int[tempGrades.size()];
-		for (int i =0; i < tempGrades.size(); i++) 
+		for (int i = 0; i < tempGrades.size(); i++)
 			grades[i] = tempGrades.get(i);
 		
 		return grades;
+	}
+
+
+	public int[] findfrequencies(int[] grades) {
+		int[] gradeFrequencies = new int[11];
+		for (int i = 0; i < grades.length; i++) {
+			gradeFrequencies[grades[i]]++ ;
+		}
+		return gradeFrequencies;
 	}
 
 
@@ -69,7 +79,7 @@ public class HistogramGenerator {
 		boolean urls = false; // do not visualize urls
 
 		// Declare and initialize a createXYLineChart JFreeChart
-		JFreeChart chart = ChartFactory.createXYLineChart("Chart title", "x_axis title", "y_axis_title", dataset,
+		JFreeChart chart = ChartFactory.createXYLineChart("Grades Histogram", "Grades", "Students", dataset,
 				PlotOrientation.VERTICAL, legend, tooltips, urls);
 
 		/*
@@ -89,8 +99,8 @@ public class HistogramGenerator {
 		HistogramGenerator hm = new HistogramGenerator();
 		
 		int[] grades = hm.readFromFile(filename);
-		hm.makeHistogram(grades);
-
+		int[] gradeFrequencies = hm.findfrequencies(grades);
+		hm.makeHistogram(gradeFrequencies);
 	}
 
 }
