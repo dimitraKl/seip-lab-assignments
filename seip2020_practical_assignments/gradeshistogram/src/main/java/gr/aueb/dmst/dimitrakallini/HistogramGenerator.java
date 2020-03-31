@@ -13,8 +13,21 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
+/***
+ * 
+ * @author dimitrakallini The purpose of this class is to receive a file with
+ * 			students' grades and demonstrate their frequencies in a histogram.
+ * @since March 2020 
+ */
 public class HistogramGenerator {
 
+	/***
+	 * Receives a file with students' grades. After reading all the grades
+	 * from this file, a single dimension array that stores the grades
+	 * is generated.
+	 * 
+	 * @param filename Single dimension integer array
+	 */
 	public int[] readFromFile(String filename) {
 		
 		File fileWithGrades = new File(filename);
@@ -42,6 +55,12 @@ public class HistogramGenerator {
 	}
 
 
+	/***
+	 * Receives a single dimension array with students' grades. Then, creates
+	 * another single dimension array containing the frequency of each grade.
+	 * 
+	 * @param grades Single dimension integer array
+	 */
 	public int[] findfrequencies(int[] grades) {
 		int[] gradeFrequencies = new int[11];
 		for (int i = 0; i < grades.length; i++) {
@@ -51,6 +70,14 @@ public class HistogramGenerator {
 	}
 
 
+	/***
+	 * Receives a single dimension Integer array. From this array the dataset
+	 * that will be used for the visualization is generated. Finally, The chart
+	 * is generated with the use of the aforementioned dataset and then
+	 * presented in the screen.
+	 * 
+	 * @param grades Single dimension integer array
+	 */
 	public void makeHistogram(int[] grades) {
 		/*
 		 * The XYSeriesCollection object is a set XYSeries series (dataset) that
