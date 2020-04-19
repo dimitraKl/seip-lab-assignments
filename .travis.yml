@@ -1,0 +1,15 @@
+language: java
+
+jdk:
+  - openjdk8
+  - oraclejdk8
+
+branches:
+  only:
+  - development
+
+before_script:
+  - cd seip2020_practical_assignments
+
+script:
+  - mvn test
