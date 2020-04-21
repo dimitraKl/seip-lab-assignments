@@ -9,22 +9,22 @@ public class ArithmeticOperationsTest {
 	ArithmeticOperations ao = new ArithmeticOperations();
 
 	@Test
-	public void test_divide() {
+	public void testDivide() {
 		Assert.assertEquals(5, ao.divide(10, 2), 0);
 	}
 	
 	@Test (expected = ArithmeticException.class)
-	public void test_divide_by_zero() {
+	public void testDivideByZeroException() {
 		ao.divide(3, 0);
 	}
 	
 	@Test
-	public void test_multiply() {
+	public void testMultiply() {
 		Assert.assertEquals(20, ao.multiply(10, 2), 0);
 	}
 	
 	@Test
-	public void test_multiply_border_values() {
+	public void testMultiplyBorderValues() {
 		Assert.assertEquals(Integer.MAX_VALUE, ao.multiply(1, Integer.MAX_VALUE), 0);
 	}
 	
@@ -32,19 +32,19 @@ public class ArithmeticOperationsTest {
 	public ExpectedException thrown = ExpectedException.none();
 	
 	@Test
-	public void test_multiply_one_negative_number_exception() {
+	public void testMultiplyOneNegativeNumberException() {
 		thrown.expectMessage("x & y should be >= 0");
 		ao.multiply(-10, 2);
 	}
 	
 	@Test
-	public void test_multiply_two_negative_numbers_exception() {
+	public void testMultiplyTwoNegativeNumbersException() {
 		thrown.expectMessage("x & y should be >= 0");
 		ao.multiply(-10, -2);
 	}
 	
 	@Test
-	public void test_multiply_product_not_integer_exception() {
+	public void testMultiplyProductNotIntegerException() {
 		thrown.expectMessage("The product does not fit in an Integer variable");
 		ao.multiply(Integer.MAX_VALUE, Integer.MAX_VALUE);
 	}

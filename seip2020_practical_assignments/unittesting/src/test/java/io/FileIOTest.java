@@ -11,7 +11,7 @@ public class FileIOTest {
 	FileIO fio = new FileIO();
 
 	@Test
-	public void test_readFile() {
+	public void testReadFile() {
 		int[] myArray = new int[]{5,21,6,18,35,2,14};
 		
 		String resourceName = "testFileNormal.txt";
@@ -26,14 +26,14 @@ public class FileIOTest {
 	public ExpectedException thrown = ExpectedException.none();
 	
 	@Test
-	public void test_readFile_file_not_exist_exception() {
+	public void testReadFileFileNotExistException() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Input file does not exist");
 		fio.readFile("randomFile.txt");
 	}
 	
 	@Test
-	public void test_readFile_empty_file_exception() {
+	public void testReadFileEmptyFileException() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Given file is empty");
 

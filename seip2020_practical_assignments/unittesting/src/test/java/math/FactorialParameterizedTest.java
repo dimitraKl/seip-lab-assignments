@@ -28,7 +28,7 @@ public class FactorialParameterizedTest {
 	}
 	
 	@Test
-	public void test_factorial() {
+	public void testFactorial() {
 		Assert.assertEquals(result, mm.factorial(n));
 	}
 
