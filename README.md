@@ -15,6 +15,8 @@ This repository will be used for my lab assignments in the lesson Software Engin
 
 * [JFreeChart](https://mvnrepository.com/artifact/org.jfree/jfreechart) 1.0
 * [JUnit](https://junit.org/junit4/) 4.12
+* [JaCoCo](https://www.eclemma.org/jacoco/) 0.8.3
+* [Mockito](https://mvnrepository.com/artifact/org.mockito/mockito-core/2.27.0) 2.27
 
 ### Built With
 
