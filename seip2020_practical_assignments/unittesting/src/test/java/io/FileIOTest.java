@@ -45,4 +45,18 @@ public class FileIOTest {
 		fio.readFile(absolutePath);
 	}
 
+	@Test
+	public void testReadFileContainsInvalidEntries() {
+		String resourceName = "testFileInvalidEntries.txt";
+		ClassLoader classLoader = getClass().getClassLoader();
+		File file = new File(classLoader.getResource(resourceName).getFile());
+		String absolutePath = file.getAbsolutePath();
+
+		try {
+			fio.readFile(absolutePath);
+		} catch(NumberFormatException e) {
+			Assert.fail();
+		}
+	}
+
 }
