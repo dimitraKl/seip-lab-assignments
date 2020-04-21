@@ -25,6 +25,7 @@ public class FileIO {
 	 * @return an array of numbers
 	 * @exception IllegalArgumentException when the given file does not exist
 	 * @exception IllegalArgumentException when the given file is empty
+	 * @exception NumberFormatException when the given file contains invalid entries
 	 * @exception IOException when an IO interruption occurs (not required to be tested)
 	 */
 	public int[] readFile(String filepath) {
