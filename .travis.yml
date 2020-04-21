@@ -11,4 +11,4 @@ before_script:
   - cd seip2020_practical_assignments
 
 script:
-  - mvn test
+  - mvn clean package jacoco:report
