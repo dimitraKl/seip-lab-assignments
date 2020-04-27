@@ -10,7 +10,8 @@ Unit testing project contains arithmetic operations and file input/output operat
 
 ### Tests
 
-In order to run the tests you should run `mvn test`.
+* In order to run the tests you should run `mvn test`.
+* In order to generate the JaCoCo report for code coverage you should run `mvn package jacoco:report`. The coverage report is generated in the following location: `target/site/jacoco`
 
 ## Licence
 
