@@ -47,16 +47,14 @@ public class FileIOTest {
 
 	@Test
 	public void testReadFileContainsInvalidEntries() {
+		int[] myArray = new int[]{2,65};
+
 		String resourceName = "testFileInvalidEntries.txt";
 		ClassLoader classLoader = getClass().getClassLoader();
 		File file = new File(classLoader.getResource(resourceName).getFile());
 		String absolutePath = file.getAbsolutePath();
 
-		try {
-			fio.readFile(absolutePath);
-		} catch(NumberFormatException e) {
-			Assert.fail();
-		}
+		Assert.assertArrayEquals(myArray, fio.readFile(absolutePath));
 	}
 
 }
