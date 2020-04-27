@@ -27,7 +27,12 @@ public class ArithmeticOperationsTest {
 	public void testMultiply() {
 		Assert.assertEquals(20, ao.multiply(10, 2), 0);
 	}
-	
+
+	@Test
+	public void testMultiplyWithZero() {
+		Assert.assertEquals(0, ao.multiply(10, 0), 0);
+	}
+
 	@Test
 	public void testMultiplyBorderValues() {
 		Assert.assertEquals(Integer.MAX_VALUE, ao.multiply(1, Integer.MAX_VALUE), 0);
