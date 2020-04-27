@@ -13,15 +13,6 @@
 	<name>Unit Testing Project</name>
 	<description>Unit testing project contains arithmetic operations and 
 	    file input/output operations for practicing Unit Testing.</description>
-	
-	<dependencies>
-	  <dependency>
-	    <groupId>junit</groupId>
-	    <artifactId>junit</artifactId>
-	    <version>4.12</version>
-	    <scope>test</scope>
-	  </dependency>
-	</dependencies>
 
 	<build>
 	  <plugins>
