@@ -12,7 +12,12 @@ public class ArithmeticOperationsTest {
 	public void testDivide() {
 		Assert.assertEquals(5, ao.divide(10, 2), 0);
 	}
-	
+
+	@Test
+	public void testDivideZeroNumerator() {
+		Assert.assertEquals(0, ao.divide(0, 2), 0);
+	}
+
 	@Test (expected = ArithmeticException.class)
 	public void testDivideByZeroException() {
 		ao.divide(3, 0);
