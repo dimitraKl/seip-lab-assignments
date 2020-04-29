@@ -1,13 +1,13 @@
 # seip-lab-assignments
 
-[![Build Status](https://travis-ci.com/dimitraKl/seip-lab-assignments.svg?token=NzFqxWAsupiMJqJnq3ai&branch=development)](https://travis-ci.com/dimitraKl/seip-lab-assignments)
+[![Build Status](https://travis-ci.com/dimitraKl/seip-lab-assignments.svg?token=NzFqxWAsupiMJqJnq3ai&branch=master)](https://travis-ci.com/dimitraKl/seip-lab-assignments)
 
 This repository will be used for my lab assignments in the lesson Software Engineering in practice.
 
 ## Projects
 
-* [Grades Histogram](https://github.com/dimitraKl/seip-lab-assignments/blob/development/seip2020_practical_assignments/gradeshistogram/README.md)
-* [Unit Testing](https://github.com/dimitraKl/seip-lab-assignments/blob/development/seip2020_practical_assignments/unittesting/README.md)
+* [Grades Histogram](https://github.com/dimitraKl/seip-lab-assignments/blob/master/seip2020_practical_assignments/gradeshistogram/README.md)
+* [Unit Testing](https://github.com/dimitraKl/seip-lab-assignments/blob/master/seip2020_practical_assignments/unittesting/README.md)
 
 ## Setup
 
