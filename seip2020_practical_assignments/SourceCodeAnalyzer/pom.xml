@@ -9,7 +9,7 @@
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
-	
+	<artifactId>sourcecodeanalyzer</artifactId>
 	<name>Source Code Analyzer Project</name>
 	<description>Source Code Analyzer project contains a software system that 
 		reads a java source code file, calculates the LOC, NOM and NOC metrics 
