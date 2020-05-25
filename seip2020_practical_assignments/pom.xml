@@ -13,6 +13,7 @@
   <modules>
   	<module>gradeshistogram</module>
   	<module>unittesting</module>
+  	<module>sourcecodeanalyzer</module>
   </modules>
 
   <properties>
