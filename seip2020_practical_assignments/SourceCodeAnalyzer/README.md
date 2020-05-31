@@ -15,6 +15,7 @@ Factory strategy pattern appears 2 times in this project. The factories are used
 The pattern is implemented in:
 
 **Source Code Analyzer System**
+
 Consists of:
 * SourceCodeAnalyzerFactory: The factory that creates the appropriate analyzer based on the analyzer type that the user has given as input.
 * SourceCodeAnalyzer: The interface that contains the methods needed to be implemented for any analyzer type.
@@ -22,6 +23,7 @@ Consists of:
 * StrcompAnalyzer: The class that implements the functionality for *strcomp* analyzer type.
 
 **Source File Reader System**
+
 Consists of:
 * SourceFileReaderFactory: The factory that creates the appropriate file reader based on the file reader type that the user has given as input.
 * SourceFileReader: The interface that contains the methods needed to be implemented for any file reader.
@@ -42,6 +44,7 @@ Null object pattern appears 1 time in this project. The implementation of an int
 The pattern is implemented in:
 
 **File Exporter System**
+
 Consists of:
 * FileExporterFactory: The factory that creates the appropriate file exporter based on the file exporter type that the user has given as input.
 * FileExporter: The interface that contains the methods needed to be implemented for any file exporter.
@@ -60,6 +63,7 @@ Facade pattern appears 1 time in this project. The facade class is used as a fro
 The pattern is implemented in:
 
 **Metrics System**
+
 Consists of:
 * Metrics: The facade class that handles all the appropriate functionalities that are implemented in all the systems mentioned above. 
 
