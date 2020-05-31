@@ -7,7 +7,7 @@ public class SourceCodeAnalyzerFactory {
 		if(analyzerType.equals("regex")) {
 			analyzer = new RegexAnalyzer(fileLocation);
 		} else if (analyzerType.equals("strcomp")) {
-			analyzer = new StrcopmAnalyzer(fileLocation);
+			analyzer = new StrcompAnalyzer(fileLocation);
 		} else {
 			throw new IllegalArgumentException("Unknown analyzer type: " + analyzerType);
 		}

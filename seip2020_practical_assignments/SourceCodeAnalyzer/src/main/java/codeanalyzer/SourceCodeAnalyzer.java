@@ -77,10 +77,10 @@ class RegexAnalyzer implements SourceCodeAnalyzer {
 }
 
 
-class StrcopmAnalyzer implements SourceCodeAnalyzer {
+class StrcompAnalyzer implements SourceCodeAnalyzer {
 	private SourceFileReader fileReader;
 
-	public StrcopmAnalyzer(String fileReaderType) {
+	public StrcompAnalyzer(String fileReaderType) {
 		SourceFileReaderFactory readerFactory = new SourceFileReaderFactory();
 		this.fileReader = readerFactory.createSourceFileReader(fileReaderType);
 	}
