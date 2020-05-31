@@ -52,7 +52,7 @@ Consists of:
 * JsonExporter: The class that implements the functionality for exporting to a *json* file.
 * NullExporter: The class that shows an error message if the file exporter type is unknown.
 
-###Facade Pattern
+### Facade Pattern
 
 Facade pattern appears 1 time in this project. The facade class is used as a front-face interface mask in order to hide from the client any complex functionalities. It reads a file with Source File Reader System, calculates the LOC, NOM and NOC metrics with the Source Code Analyzer System and finally exports the metrics with File Exporter System.
 
