@@ -69,7 +69,9 @@ Consists of:
 
 ## Class Diagram
 
-The class diagram for this project can be found [here](https://github.com/dimitraKl/seip-lab-assignments/blob/development/seip2020_practical_assignments/SourceCodeAnalyzer/ClassDiagram.jpg).
+This is the class diagram for this project:
+
+![Class Diagram](https://github.com/dimitraKl/seip-lab-assignments/blob/development/seip2020_practical_assignments/SourceCodeAnalyzer/ClassDiagram.jpeg)
 
 ## Setup
 
