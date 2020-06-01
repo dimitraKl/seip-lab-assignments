@@ -6,8 +6,22 @@ import java.util.Map;
 
 import codeanalyzer.*;
 
+/**
+ * 
+ * @author dimitrakallini
+ *
+ */
 public class DemoClient {
 
+	/**
+	 * 
+	 * @param filepath The source code file path
+	 * @param sourceCodeAnalyzerType The analyzer type (regex or strcomp)
+	 * @param sourceFileLocation The location of the file (local or web)
+	 * @param outputFilePath The file path for the output file
+	 * @param outputFileType The output file type (csv or json) 
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException {
 		String filepath = "src/main/resources/TestClass.java";
 		String sourceCodeAnalyzerType = "regex";

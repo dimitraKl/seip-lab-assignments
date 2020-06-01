@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Implements the role of a facade class. Reads a file, calculates the 
+ * loc, nom and noc metrics and exports them in another file.
+ * @author dimitrakallini
+ *
+ */
 public class Metrics {
 
 	public static void calculateMetrics(String filepath, String analyzerType, String fileLocation, String outputFilePath, String outputFileType) throws IOException {

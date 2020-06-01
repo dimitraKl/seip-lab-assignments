@@ -5,11 +5,17 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 
+/**
+ * @author dimitrakallini
+ */
 public interface FileExporter {
 	public void writeFile(Map<String, Integer> metrics, String filepath);
 }
 
 
+/**
+ * Exports the metrics in a csv file.
+ */
 class CsvExporter implements FileExporter {
 
 	@Override
@@ -37,6 +43,9 @@ class CsvExporter implements FileExporter {
 }
 
 
+/**
+ * Exports the metrics in a json file.
+ */
 class JsonExporter implements FileExporter {
 
 	@Override
@@ -48,6 +57,9 @@ class JsonExporter implements FileExporter {
 }
 
 
+/**
+ * Handles the unknown file type.
+ */
 class NullExporter implements FileExporter {
 
 	private String outputType;

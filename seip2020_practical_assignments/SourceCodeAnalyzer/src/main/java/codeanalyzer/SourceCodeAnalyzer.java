@@ -6,15 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Analyzes the contents of a Java source code file 
- * and calculates the following metrics: loc = lines of code,
- * nom = number of methods, and noc=number of classes. 
- * The current functionality supports two types of source code analysis,
- * namely regex (with the use of regular expressions) and 
- * strcomp (with the use of string comparison).
- * This class deliberately contains code smells and violations of design principles. 
- * @author agkortzis
- *
+ * @author dimitrakallini
  */
 public interface SourceCodeAnalyzer {
 	public int calculateLOC(String filepath) throws IOException;
@@ -23,6 +15,9 @@ public interface SourceCodeAnalyzer {
 }
 
 
+/**
+ * Calculates the metrics with regex analysis.
+ */
 class RegexAnalyzer implements SourceCodeAnalyzer {
 	private SourceFileReader fileReader;
 
@@ -77,6 +72,9 @@ class RegexAnalyzer implements SourceCodeAnalyzer {
 }
 
 
+/**
+ * Calculates the metrics with strcomp analysis.
+ */
 class StrcompAnalyzer implements SourceCodeAnalyzer {
 	private SourceFileReader fileReader;
 

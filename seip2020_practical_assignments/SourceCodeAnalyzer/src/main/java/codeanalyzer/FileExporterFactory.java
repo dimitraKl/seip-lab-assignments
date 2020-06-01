@@ -6,6 +6,7 @@ package codeanalyzer;
  * The output can be CSV or JSON files, otherwise it will lead
  * to unknown output file type error.
  * @author dimitrakallini
+ * 
  */
 public class FileExporterFactory {
 	
