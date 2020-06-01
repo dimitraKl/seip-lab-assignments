@@ -67,6 +67,10 @@ The pattern is implemented in:
 Consists of:
 * Metrics: The facade class that handles all the appropriate functionalities that are implemented in all the systems mentioned above. 
 
+## Class Diagram
+
+The class diagram for this project can be found [here](https://github.com/dimitraKl/seip-lab-assignments/blob/development/seip2020_practical_assignments/SourceCodeAnalyzer/ClassDiagram.jpg).
+
 ## Setup
 
 ### Build with
