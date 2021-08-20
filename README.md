@@ -6,8 +6,9 @@ This repository will be used for my lab assignments in the lesson Software Engin
 
 ## Projects
 
-* [Grades Histogram](https://github.com/dimitraKl/seip-lab-assignments/blob/master/seip2020_practical_assignments/gradeshistogram/README.md)
-* [Unit Testing](https://github.com/dimitraKl/seip-lab-assignments/blob/master/seip2020_practical_assignments/unittesting/README.md)
+* [Grades Histogram](https://github.com/dimitraKl/seip-lab-assignments/blob/development/seip2020_practical_assignments/gradeshistogram/README.md)
+* [Unit Testing](https://github.com/dimitraKl/seip-lab-assignments/blob/development/seip2020_practical_assignments/unittesting/README.md)
+* [Source Code Analyzer](https://github.com/dimitraKl/seip-lab-assignments/blob/development/seip2020_practical_assignments/SourceCodeAnalyzer/README.md)
 
 ## Setup
 
